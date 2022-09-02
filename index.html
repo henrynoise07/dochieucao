@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tên là gì bây giờ?</title>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="image_src" href="#" />
+    <link rel="image_src" href="#" />
+    <link rel="icon" href="#">
+
+    <meta property="og:image" content="http://ditmewibu.com/ckongu.jpg" />
+    <meta property="og:title" content="Dit me wibu" />
+    <meta property="og:url" content="https://ditmewibu.com" />
+</head>
+
+<body>
+    <div id="accordion-1">
+        <h2 id="mtttm"> TRÁC ĐỖ GIA HƯNG ĐO CHIỀU CAO CHO BẠN </h2>
+        <div class="center">
+            <p>Nhập chiều cao của bạn(cm)</p>
+            <input type="text" onfocus="this.value=''" onChange="mod();" id="chieucao_e">
+            <p id="chieucao_a"></p>
+            <button id="nuttinhchieucao" onclick="age()">Tính chiều cao của bạn</button>
+            <h6>made by Henry Noise(TDGH)</h6>
+        </div>
+    </div>
+    <script>
+        var inc = 0, inb = 0; function mod() { inb = inc = 0 } function age() {
+            var n = document.getElementById("chieucao_e").value, e = n + " là clgt?";
+            if (0 == document.getElementById("chieucao_e").value.length || isNaN(n)) if (0 == document.getElementById("chieucao_e").value.length) document.getElementById("chieucao_a").innerHTML = "Bạn chưa nhập chiều cao.";
+            else {
+                switch (inc) {
+                    case 0: document.getElementById("chieucao_a").innerHTML = e; break; case 1: document.getElementById("chieucao_a").innerHTML = "clgt x2";
+                        break; case 2: document.getElementById("chieucao_a").innerHTML = "Bạn bị làm sao í"
+                }inc++
+            } else 0 == inb ? (document.getElementById("chieucao_a").innerHTML = "Bạn cao " + n + " cm.", inc = 0) : document.getElementById("chieucao_a").innerHTML = "Chiều cao của bạn vẫn là " + n + " cm", inb++; if (3 < inc) for (var t = 0;
+                t <= inc; t++)document.getElementById("chieucao_a").innerHTML = "Vẫn chưa dừng à :)";
+            6 == inc && (document.getElementById("chieucao_a").innerHTML = "Hưng đã cáu :D"), 7 == inc && (document.getElementById("chieucao_a").innerHTML = "Lần nữa coi =))", document.getElementById("nuttinhchieucao").innerHTML = "OK"), 7 < inc && (window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        }
+    </script>
+</body>
+</html>
